@@ -19,10 +19,10 @@
         <li class="main-nav__item">
           <a href="index.html">Главная</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--current">
           <a>Фото и видео</a>
         </li>
-        <li class="main-nav__item main-nav__item--current">
+        <li class="main-nav__item">
           <a href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
@@ -38,79 +38,79 @@
         политике и экономике.</p>
     </section>
     <section class="gallery">
+      <h2 class="visually-hidden">Список фото</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
           <a href="#">
             <img class="gallery__img" src="/img/gallery/photo-1-mobile.jpg" width="280" height="280"
               alt="Закат на въезде в город">
           </a>
-          <div class="gallery-description">
-            <blockquote class="gallery-description__item signature">
-              <p class="signature__title">Неродные просторы</p>
-              <cite class="signature__text">Автор фото: Борис</cite>
-            </blockquote>
-            <p class="gallery-description__item gallery-description__item--calculator">
-              1350
-            </p>
-          </div>
+          <p class="gallery__name">
+            <strong>Неродные просторы</strong> Автор фото: Борис
+          </p>
+          <p class="gallery__likes">
+            1350
+          </p>
         </li>
         <li class="gallery__item">
           <a href="#">
             <img class="gallery__img" src="/img/gallery/photo-2-mobile.jpg" width="280" height="280"
               alt="Цветущие кактусы на фоне гор">
           </a>
-          <div class="gallery-description">
-            <blockquote class="gallery-description__item signature">
-              <p class="signature__title">Местная растительность</p>
-              <cite class="signature__text">Автор фото: Сергей</cite>
-            </blockquote>
-            <p class="gallery-description__item gallery-description__item--calculator">
-              143
-            </p>
-          </div>
+          <p class="gallery__name">
+            <strong>Местная растительность</strong> Автор фото: Сергей
+          </p>
+          <p class="gallery__likes">
+            143
+          </p>
         </li>
         <li class="gallery__item">
           <a href="#">
             <img class="gallery__img" src="/img/gallery/photo-3-mobile.jpg" width="280" height="280" alt="Горная тропа">
           </a>
-          <div class="gallery-description">
-            <blockquote class="gallery-description__item signature">
-              <p class="signature__title">Дорога на север</p>
-              <cite class="signature__text">Автор фото: Петр</cite>
-            </blockquote>
-            <p class="gallery-description__item gallery-description__item--calculator">
-              96
-            </p>
-          </div>
+          <p class="gallery__name">
+            <strong>Дорога на север</strong> Автор фото: Петр
+          </p>
+          <p class="gallery__likes">
+            96
+          </p>
         </li>
         <li class="gallery__item">
           <a href="#">
             <img class="gallery__img" src="/img/gallery/photo-4-mobile.jpg" width="280" height="280"
               alt="Каменный мост">
           </a>
-          <div class="gallery-description">
-            <blockquote class="gallery-description__item signature">
-              <p class="signature__title">Мост дьявола</p>
-              <cite class="signature__text">Автор фото: Антон</cite>
-            </blockquote>
-            <p class="gallery-description__item gallery-description__item--calculator">
-              254
-            </p>
+          <p class="gallery__name">
+            <strong>>Мост дьявола</strong> Автор фото: Антон
+          </p>
+          <p class="gallery__likes">
+            254
+          </p>
           </div>
         </li>
       </ul>
     </section>
-    <section class="description">
-      <h2 class="description__title">Все еще сомневаетесь?</h2>
-      <p class="description__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-        раз!</p>
-    </section>
     <section class="video-gallery">
-      <a class="video-gallery__link" href="#">
-        <img class="video-gallery__img" src="/img/gallery/video-mobile.jpg" width="320" height="200"
-          alt="Видео о Седоне">
-      </a>
-      <div class="video-gallery__panel"></div>
+      <div class="video-gallery__description description">
+        <h2 class="description__title">Все еще сомневаетесь?</h2>
+        <p class="description__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </div>
+      <img class="video-gallery__img" src="/img/gallery/video-mobile.jpg" width="320" height="200" alt="Видео о Седоне">
+      <div class="video-gallery__panel panel">
+        <div class="panel__bar">
+          <div class="panel__handle" tabindex="0"></div>
+        </div>
+        <button class="panel__button panel__button--play" type="button">
+          <span class="visually-hidden">Повторить</span>
+        </button>
+        <button class="panel__button panel__button--subtitles" type="button">
+          <span class="visually-hidden">Подключить субтитры</span>
+        </button>
+        <button class="panel__button panel__button--fullscreen" type="button">
+          <span class="visually-hidden">Развернуть на весь экран</span>
+        </button>
+      </div>
     </section>
   </main>
   <footer class="page-footer">
