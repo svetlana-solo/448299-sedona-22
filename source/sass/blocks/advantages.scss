@@ -8,7 +8,6 @@
   font-size: 21px;
   margin: 0;
   margin-bottom: 26px;
-
 }
 
 .advantages__text {
@@ -34,9 +33,9 @@
 
 
 .advantages__item--pic {
-  position: relative;
+  color: $white;
+  background-color: $blue;
 }
-
 
 .advantages__item--pic::after {
   display: block;
@@ -55,25 +54,7 @@
   background-image: url("../img/photo-bridge-1x.jpg");
 }
 
-
-
-
 .advantages__item {
   padding-top: 25px;
-}
-
-.advantages__item:first-child {
-  color: $white;
-  background-color: $blue;
-}
-
-.advantages__item:nth-child(2) {
-  color: $white;
-  background-color: $blue;
-}
-
-.advantages__item:nth-child(3),
-.advantages__item:nth-child(4),
-.advantages__item:nth-child(5) {
   background-color: $grey;
 }
