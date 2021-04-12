@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -72,18 +73,15 @@
           <legend class="form-list__title">Ваше общее впечатление:</legend>
           <ul class="form-list__list">
             <li class="form-list__item radio">
-              <input class="visually-hidden radio__input" type="radio" checked name="impression" value="positive"
-                id="review-positive">
+              <input class="radio__input" type="radio" checked name="impression" value="positive" id="review-positive">
               <label for="review-positive">Скорее положительное</label>
             </li>
             <li class="form-list__item radio">
-              <input class="visually-hidden radio__input" type="radio" name="impression" value="negative"
-                id="review-negative">
+              <input class="radio__input" type="radio" name="impression" value="negative" id="review-negative">
               <label for="review-negative">Скорее отрицательное</label>
             </li>
             <li class="form-list__item radio">
-              <input class="visually-hidden radio__input" type="radio" name="impression" value="indefinite"
-                id="review-indefinite">
+              <input class="radio__input" type="radio" name="impression" value="indefinite" id="review-indefinite">
               <label for="review-indefinite">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -92,20 +90,19 @@
           <legend class="form-list__title">Посещенные достопримечательности:</legend>
           <ul class="form-list__list">
             <li class="form-list__item checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" checked name="bridge" id="review-bridge">
+              <input class="checkbox__input" type="checkbox" checked name="bridge" id="review-bridge">
               <label for="review-bridge">Мост Дьявола</label>
             </li>
             <li class="form-list__item checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" checked name="mountain"
-                id="review-mountain">
+              <input class="checkbox__input" type="checkbox" checked name="mountain" id="review-mountain">
               <label for="review-mountain">Гора-Колокол</label>
             </li>
             <li class="form-list__item checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" checked name="park" id="review-park">
+              <input class="checkbox__input" type="checkbox" checked name="park" id="review-park">
               <label for="review-park">Слайд-парк</label>
             </li>
             <li class="form-list__item checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="rocks" id="review-rocks">
+              <input class="checkbox__input" type="checkbox" name="rocks" id="review-rocks">
               <label for="review-rocks">Красные скалы</label>
             </li>
           </ul>
@@ -116,6 +113,9 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </p>
         <button class="form-review__button button" type="submit">Отправить отзыв</button>
+        <p class="form-review__comment">
+          * — обязательные поля
+        </p>
       </form>
     </section>
   </main>

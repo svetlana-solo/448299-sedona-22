@@ -31,12 +31,6 @@
   padding-bottom: 39px;
 }
 
-
-.advantages__item--pic {
-  color: $white;
-  background-color: $blue;
-}
-
 .advantages__item--pic::after {
   display: block;
   content: "";
@@ -57,4 +51,9 @@
 .advantages__item {
   padding-top: 25px;
   background-color: $grey;
+}
+
+.advantages__item--pic {
+  color: $white;
+  background-color: $blue;
 }

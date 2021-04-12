@@ -1,0 +1,13 @@
+.field__input {
+  background-color: $grey-200;
+  border: none;
+  padding: 18px 22px 14px 22px;
+  margin-bottom: 20px;
+}
+
+.field__input::placeholder {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
