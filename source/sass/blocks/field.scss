@@ -3,11 +3,12 @@
   border: none;
   padding: 18px 22px 14px 22px;
   margin-bottom: 20px;
-}
-
-.field__input::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+}
+
+.field__input::placeholder {
   color: $black;
 }
