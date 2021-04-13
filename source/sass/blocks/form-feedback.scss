@@ -1,0 +1,22 @@
+.form-feedback__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-feedback__input {
+  background-color: $grey-200;
+  border: none;
+  padding: 18px 21px 24px 21px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form-feedback__input::placeholder {
+  color: $black;
+}
+
+.form-review__comment {
+  margin-bottom: 58px;
+}
