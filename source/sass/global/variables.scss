@@ -12,3 +12,9 @@ $grey-400: #d5d5d5;
 $grey-500: #666666;
 $grey-600: #5c6870;
 $grey-700: #333333;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: $tablet-width - 1px;
