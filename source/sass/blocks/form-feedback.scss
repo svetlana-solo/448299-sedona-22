@@ -20,3 +20,9 @@
 .form-review__comment {
   margin-bottom: 58px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-feedback {
+    grid-column: span 2;
+  }
+}
