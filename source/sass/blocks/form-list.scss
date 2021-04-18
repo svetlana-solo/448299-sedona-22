@@ -17,7 +17,6 @@
   margin-bottom: 17px;
 }
 
-
 @media (min-width: $tablet-width) {
   .form-list--attractions {
     grid-column: span 2;
@@ -39,4 +38,3 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
