@@ -17,6 +17,15 @@
 
 .advantages__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__title {
@@ -31,6 +40,30 @@
   padding-bottom: 39px;
 }
 
+.advantages__item {
+  padding-top: 25px;
+  background-color: $grey;
+}
+
+.advantages__item--pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: $white;
+  background-color: $blue;
+}
+
+.advantages__city {
+  grid-column: 1 / -1;
+  order: 3;
+}
+
+
+@media (min-width: $tablet-width) {
+  .advantages__item--pic {
+    grid-column: span 3;
+  }
+}
+
 .advantages__item--pic::after {
   display: block;
   content: "";
@@ -38,6 +71,7 @@
   height: 256px;
   background-repeat: no-repeat;
   background-position: center bottom;
+  grid-column: span 2;
 }
 
 .advantages__item--pic:first-child::after {
@@ -46,14 +80,5 @@
 
 .advantages__item--pic:nth-child(2)::after {
   background-image: url("../img/photo-bridge-1x.jpg");
-}
-
-.advantages__item {
-  padding-top: 25px;
-  background-color: $grey;
-}
-
-.advantages__item--pic {
-  color: $white;
-  background-color: $blue;
+  order: -1;
 }

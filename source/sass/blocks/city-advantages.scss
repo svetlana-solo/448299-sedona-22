@@ -7,6 +7,13 @@
   padding: 35px 0 35px 50px;
 }
 
+@media (min-width: $tablet-width) {
+  .city-advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .city-advantages__item:not(:last-child) {
   padding-bottom: 26px;
 }

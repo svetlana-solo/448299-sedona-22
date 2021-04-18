@@ -5,3 +5,21 @@
   background-position: center bottom;
   padding-bottom: 389px;
 }
+
+.page-header__logo {
+  outline: 2px solid red;
+  position: absolute;
+  left: calc(50% - 51px);
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    height: 84px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 97px;
+  }
+}
