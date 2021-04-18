@@ -18,3 +18,25 @@
 .gallery__likes {
   font-weight: bold;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery__item:first-child {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery__item:first-child {
+    grid-column: span 3;
+  }
+}
+
