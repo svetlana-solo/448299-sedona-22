@@ -1,3 +1,36 @@
 .form-review {
   padding-top: 20px;
+  padding-bottom: 58px;
+}
+
+
+.form-review__comment {
+  padding-left: 20px;
+  text-align: center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form-review__comment {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-review__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-review__container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .form-review__comment {
+    text-align: right;
+  }
 }

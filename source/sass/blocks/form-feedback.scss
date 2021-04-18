@@ -4,6 +4,8 @@
 }
 
 .form-feedback__input {
+  display: block;
+  width: 100%;
   background-color: $grey-200;
   border: none;
   padding: 18px 21px 24px 21px;
@@ -15,10 +17,6 @@
 
 .form-feedback__input::placeholder {
   color: $black;
-}
-
-.form-review__comment {
-  margin-bottom: 58px;
 }
 
 @media (min-width: $tablet-width) {

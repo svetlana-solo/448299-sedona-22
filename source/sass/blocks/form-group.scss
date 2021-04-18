@@ -7,6 +7,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 17px;
+  grid-column: 1 / -1;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +18,8 @@
 
 @media (min-width: $desktop-width) {
   .form-group--contacts {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    column-gap: 79px;
   }
 }
