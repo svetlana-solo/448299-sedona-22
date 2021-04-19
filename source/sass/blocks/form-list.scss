@@ -16,3 +16,25 @@
   font-weight: bold;
   margin-bottom: 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .form-list--attractions {
+    grid-column: span 2;
+  }
+
+  .form-list--impression {
+    order: -1;
+  }
+
+  .form-list--attractions .form-list__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list--attractions .form-list__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
