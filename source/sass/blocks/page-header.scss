@@ -1,18 +1,32 @@
 .page-header {
   background-color: $white;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding-bottom: 389px;
+  padding-top: 56px;
+  position: relative;
 }
 
 .page-header__logo {
   outline: 2px solid red;
   position: absolute;
   left: calc(50% - 51px);
+  top: 0;
+  padding: 0;
+}
+
+.page-header__main-image {
+  position: relative;
+  height: 389px;
+  background-image: url("../img/back/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  padding-top: 77px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header {
+    background-image: url("../img/back/back-desktop.jpg");
+  }
+
   .page-header__logo {
     height: 84px;
   }

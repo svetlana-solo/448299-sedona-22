@@ -13,6 +13,39 @@
   font-weight: bold;
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 22px;
+  background-color: $white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 4px;
+  background-color: $blue;
+  box-shadow: 0 9px 0 0 $blue, 0 18px 0 0 $blue;
+}
+
+
 @media (max-width: $mobile-width-only) {
   .main-nav__item a {
     color: $white;
