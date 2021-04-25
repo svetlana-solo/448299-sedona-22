@@ -4,13 +4,15 @@
   list-style: none;
   text-align: left;
   font-size: 18px;
-  padding: 35px 0 35px 50px;
+  padding: 35px 20px 35px 70px;
 }
 
 @media (min-width: $tablet-width) {
   .city-advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 158px 0 59px 0;
+    text-align: center;
   }
 }
 
@@ -24,6 +26,12 @@
   padding-bottom: 21px;
 }
 
+@media (min-width: $tablet-width) {
+  .city-advantages__title {
+    font-size: 21px;
+  }
+}
+
 .city-advantages__item p {
   margin: 0;
   font-size: 14px;
@@ -34,6 +42,43 @@
   position: relative;
 }
 
+
+@media (min-width: $tablet-width) {
+  .city-advantages__item {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .city-advantages__item--food {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .city-advantages__item--souvenir {
+    order: 3;
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .city-advantages__item {
+    padding-left: 58px;
+    padding-right: 58px;
+  }
+
+  .city-advantages__item--food {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .city-advantages__item--souvenir {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+
 .city-advantages__item::before {
   content: "";
   position: absolute;
@@ -42,6 +87,15 @@
   background-repeat: no-repeat;
   top: -10px;
   left: -48px;
+}
+
+@media (min-width: $tablet-width) {
+  .city-advantages__item::before {
+    width: 75px;
+    height: 75px;
+    top: -100px;
+    left: calc(50% - 38px);
+  }
 }
 
 .city-advantages__item--lodging::before {
@@ -54,4 +108,28 @@
 
 .city-advantages__item--food::before {
   background-image: url("../img/city-advantages/icon-burger.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .city-advantages__item--lodging::before {
+    background-size: 75px 72px;
+  }
+
+  .city-advantages__item--souvenir::before {
+    background-size: 64px 75px;
+  }
+
+  .city-advantages__item--food::before {
+    background-size: 76px 68px;
+  }
+}
+
+.city-advantages__hide {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .city-advantages__hide {
+    display: block;
+  }
 }

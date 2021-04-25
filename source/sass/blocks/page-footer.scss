@@ -1,5 +1,7 @@
 .page-footer {
   text-align: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 @media (min-width: $tablet-width) {
@@ -12,5 +14,13 @@
 .page-footer__item:first-child {
   font-weight: bold;
   font-size: 21px;
-  margin-top: 36px;
+  margin: 0;
+  align-items: center;
+  align-self: center;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-footer__item:first-child {
+    margin-top: 36px;
+  }
 }

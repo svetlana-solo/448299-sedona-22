@@ -2,6 +2,16 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .form-list--attractions {
+    grid-column: span 2;
+  }
+
+  .form-list--impression {
+    order: -1;
+  }
+}
+
 .form-list__list {
   list-style: none;
   margin: 0;
@@ -11,21 +21,7 @@
   text-transform: none;
 }
 
-.form-list__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 17px;
-}
-
 @media (min-width: $tablet-width) {
-  .form-list--attractions {
-    grid-column: span 2;
-  }
-
-  .form-list--impression {
-    order: -1;
-  }
-
   .form-list--attractions .form-list__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -37,4 +33,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+
+.form-list__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 17px;
 }
