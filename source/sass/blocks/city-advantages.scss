@@ -11,7 +11,7 @@
   .city-advantages__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 158px 0 59px 0;
+    padding: 0 0 59px 0;
     text-align: center;
   }
 }
@@ -45,6 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .city-advantages__item {
+    padding-top: 158px;
     padding-left: 36px;
     padding-right: 36px;
   }
@@ -78,7 +79,6 @@
   }
 }
 
-
 .city-advantages__item::before {
   content: "";
   position: absolute;
@@ -91,9 +91,9 @@
 
 @media (min-width: $tablet-width) {
   .city-advantages__item::before {
-    width: 75px;
-    height: 75px;
-    top: -100px;
+    width: 76px;
+    height: 76px;
+    top: 57px;
     left: calc(50% - 38px);
   }
 }
@@ -113,6 +113,7 @@
 @media (min-width: $tablet-width) {
   .city-advantages__item--lodging::before {
     background-size: 75px 72px;
+    top: 59px;
   }
 
   .city-advantages__item--souvenir::before {
@@ -121,6 +122,7 @@
 
   .city-advantages__item--food::before {
     background-size: 76px 68px;
+    top: 63px;
   }
 }
 
