@@ -4,16 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <div class="page__wrapper">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
-      </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="main-nav__logo">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -32,6 +33,10 @@
           </li>
         </ul>
       </nav>
+      <div class="page-header__main-image">
+        <img class="page-header__welcome-title" src="img/back/text-index.svg" width="282" height="214"
+          alt="Надпись Добро пожаловать">
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Sedona - сайт для туристов</h1>
@@ -54,7 +59,7 @@
                 </li>
                 <li class="city-advantages__item city-advantages__item--souvenir">
                   <h5 class="city-advantages__title">Сувениры</h5>
-                  <p>Не только китайского, но и местного производства!</p>
+                  <p>Не только китайского,<br class="city-advantages__hide" /> но и местного производства!</p>
                 </li>
                 <li class="city-advantages__item city-advantages__item--food">
                   <h5 class="city-advantages__title">Еда</h5>
@@ -124,6 +129,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="js/navigation.js"></script>
+
 </body>
 
 </html>

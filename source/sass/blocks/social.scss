@@ -5,8 +5,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  align-content: center;
-  align-items: center;
+  //align-content: center;
+  justify-content: center;
+  //align-items: center;
 }
 
 .social__item {
@@ -22,15 +23,15 @@
   align-items: center;
 }
 
-.social__item:hover {
+.social__link:hover {
   background-color: $blue-200;
 }
 
-.social__item:active {
+.social__link:active {
   background-color: $blue-300;
 }
 
-.social__item:active::before {
+.social__link:active::before {
   opacity: 0.3;
 }
 
