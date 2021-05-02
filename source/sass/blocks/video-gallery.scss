@@ -1,5 +1,8 @@
 .video-gallery {
   padding-top: 17px;
+}
+
+.video-gallery__description {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -11,6 +14,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .video-gallery {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .video-gallery__img {
   width: 100%;
+  display: block;
 }

@@ -1,0 +1,152 @@
+.panel__bar {
+  display: block;
+  width: 280px;
+  height: 45px;
+  background-color: rgba($black, 0.6);
+  position: relative;
+  margin: 0 auto;
+  margin-top: -45px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__bar {
+    width: 440px;
+    height: 93px;
+    background-color: transparent;
+    //background-color: rgba(yellow, 0.3);
+    margin-top: -93px;
+    margin-left: 71px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panel__bar {
+    width: 590px;
+  }
+}
+
+.panel__handle {
+  display: block;
+  width: 235px;
+  height: 3px;
+  background-color: rgba($white, 0.2);
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.panel__handle::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__handle {
+    width: 389px;
+    top: calc(50% - 1px);
+    left: 20px;
+  }
+
+  .panel__handle::before {
+    left: 28%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panel__handle {
+    width: 540px;
+  }
+}
+
+.panel__buttons {
+  display: block;
+  width: 280px;
+  height: 66px;
+  background-color: $grey-200;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__buttons {
+    width: 648px;
+    height: 93px;
+    margin-top: -93px;
+    background-color: rgba($black, 0.6);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panel__buttons {
+    width: 800px;
+  }
+}
+
+.panel__button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__button path {
+    fill: $white;
+  }
+}
+
+.panel__button--play {
+  display: block;
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  top: 22px;
+  left: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__button--play {
+    top: 35px;
+    left: 35px;
+  }
+}
+
+.panel__button--subtitles {
+  display: block;
+  width: 32px;
+  height: 20px;
+  position: absolute;
+  top: 23px;
+  right: 74px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__button--subtitles {
+    top: 36px;
+    right: 92px;
+  }
+}
+
+.panel__button--fullscreen {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__button--fullscreen {
+    top: 36px;
+    right: 37px;
+  }
+}

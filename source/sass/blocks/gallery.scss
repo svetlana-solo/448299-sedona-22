@@ -26,10 +26,12 @@
 
 .gallery__img {
   width: 100%;
+  display: block;
 }
 
 .gallery__name {
   text-transform: none;
+  margin: 0;
 }
 
 .gallery__name strong {
@@ -38,7 +40,62 @@
 
 .gallery__likes {
   font-weight: bold;
+  width: 70px;
+  padding-left: 32px;
+  position: relative;
 }
+
+.gallery__likes::before {
+  content: url("../img/icon/like-icon.svg");
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  display: block;
+  left: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__likes::before {
+    content: url("../img/icon/like-icon1.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 22px 20px 15px 20px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .gallery__wrapper {
+    background-color: $grey-200;
+  }
+
+  .gallery__item:not(:first-child):nth-child(odd) {
+    .gallery__wrapper {
+      background-color: $grey-350;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item {
+    position: relative;
+  }
+
+  .gallery__wrapper {
+    color: $white;
+    background-color: rgba($black, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .gallery__item:first-child {
@@ -46,8 +103,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .gallery__item:first-child {
-    grid-column: 1 / -1;
-  }
-}
+//@media (min-width: $desktop-width) {
+//  .gallery__item:first-child {
+//    grid-column: 1 / -1;
+//  }
+//}

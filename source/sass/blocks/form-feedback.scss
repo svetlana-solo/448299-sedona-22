@@ -1,6 +1,12 @@
-.form-feedback__title {
-  font-size: 18px;
-  font-weight: bold;
+.form-feedback {
+  padding-top: 20px;
+  padding-bottom: 51px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-feedback {
+    padding-bottom: 58px;
+  }
 }
 
 .form-feedback__input {

@@ -12,6 +12,19 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form-list--impression::after {
+    content: "";
+    right: 0;
+    bottom: 0;
+    height: 292px;
+    width: 1px;
+    background-color: $grey-230;
+    display: block;
+    position: absolute;
+  }
+}
+
 .form-list__list {
   list-style: none;
   margin: 0;
@@ -21,10 +34,51 @@
   text-transform: none;
 }
 
+.form-list__item {
+  position: relative;
+}
+
+.form-list__item input {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+}
+
+.form-list__item input + label::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 56px;
+  height: 56px;
+  background-color: $grey-200;
+}
+
+.form-list__item input + label:hover::before {
+  background-color: $grey-300;
+}
+
+.form-list__item input:focus + label::before {
+  background-color: $grey-300;
+}
+
+.form-list__item input:active + label::before {
+  background-color: $grey-400;
+}
+
+
 @media (min-width: $tablet-width) {
   .form-list--attractions .form-list__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .form-list__item {
+    justify-self: center;
+    width: 200px;
+    padding: 0;
   }
 }
 
@@ -32,12 +86,6 @@
   .form-list--attractions .form-list__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0;
   }
-}
-
-
-.form-list__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 17px;
 }

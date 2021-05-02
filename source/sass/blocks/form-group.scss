@@ -1,13 +1,10 @@
 .form-group {
   border: none;
-  margin: 0;
+  padding: 0;
 }
 
-.form-group__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 17px;
-  grid-column: 1 / -1;
+.form-group__field {
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -21,5 +18,15 @@
     display: grid;
     grid-template-columns: 1fr 50%;
     column-gap: 79px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-group--login {
+    padding-left: 58px;
+  }
+
+  .form-group--login legend {
+    text-align: left;
   }
 }
