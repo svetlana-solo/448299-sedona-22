@@ -12,6 +12,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form-list--impression::after {
+    content: "";
+    right: 0;
+    bottom: 0;
+    top: -40px;
+    width: 1px;
+    background-color: $grey-230;
+    position: absolute;
+  }
+}
+
 .form-list__list {
   list-style: none;
   margin: 0;
@@ -21,10 +33,17 @@
   text-transform: none;
 }
 
+.form-list__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .form-list--attractions .form-list__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    column-gap: 40px;
   }
 }
 
@@ -32,12 +51,6 @@
   .form-list--attractions .form-list__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0;
   }
-}
-
-
-.form-list__title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 17px;
 }
