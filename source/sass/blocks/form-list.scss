@@ -17,10 +17,9 @@
     content: "";
     right: 0;
     bottom: 0;
-    height: 292px;
+    top: -40px;
     width: 1px;
     background-color: $grey-230;
-    display: block;
     position: absolute;
   }
 }
@@ -36,49 +35,15 @@
 
 .form-list__item {
   position: relative;
+  margin-bottom: 20px;
 }
-
-.form-list__item input {
-  position: absolute;
-  width: 55px;
-  height: 55px;
-}
-
-.form-list__item input + label::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 3px;
-  width: 56px;
-  height: 56px;
-  background-color: $grey-200;
-}
-
-.form-list__item input + label:hover::before {
-  background-color: $grey-300;
-}
-
-.form-list__item input:focus + label::before {
-  background-color: $grey-300;
-}
-
-.form-list__item input:active + label::before {
-  background-color: $grey-400;
-}
-
 
 @media (min-width: $tablet-width) {
   .form-list--attractions .form-list__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-
-  .form-list__item {
-    justify-self: center;
-    width: 200px;
-    padding: 0;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    column-gap: 40px;
   }
 }
 

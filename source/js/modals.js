@@ -27,22 +27,6 @@ form.addEventListener('submit', function (evt) {
   form.classList.add('form__invalid');
 
   form.removeAttribute('novalidate');
-
-  if (!form.checkValidity()) {
-    modalFailure.classList.remove('modal--close');
-
-    setTimeout(function () {
-      submitButton.click();
-      form.setAttribute('novalidate', true);
-    }, 0);
-  } else {
-    form.removeAttribute('novalidate');
-    form.classList.remove('form__invalid');
-    modalSuccess.classList.remove('modal--close');
-    // form.submit();
-    form.reset();
-    form.setAttribute('novalidate', true);
-  }
 });
 
 window.addEventListener('keydown', function (evt) {

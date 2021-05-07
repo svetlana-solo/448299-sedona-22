@@ -39,25 +39,14 @@
 }
 
 .gallery__likes {
+  display: flex;
   font-weight: bold;
   width: 70px;
-  padding-left: 32px;
-  position: relative;
 }
 
-.gallery__likes::before {
-  content: url("../img/icon/like-icon.svg");
-  position: absolute;
-  width: 23px;
-  height: 21px;
-  display: block;
-  left: 0;
-}
-
-@media (min-width: $desktop-width) {
-  .gallery__likes::before {
-    content: url("../img/icon/like-icon1.svg");
-  }
+.gallery__likes svg {
+  flex-shrink: 0;
+  margin-right: 9px;
 }
 
 @media (min-width: $tablet-width) {
