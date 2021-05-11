@@ -16,3 +16,21 @@
   margin: 0;
   margin-right: 15px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__item {
+    margin-right: 11px;
+  }
+}
+
+.copyright__link svg {
+  vertical-align: middle;
+}
+
+.copyright__link:hover path {
+  fill: $blue;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}

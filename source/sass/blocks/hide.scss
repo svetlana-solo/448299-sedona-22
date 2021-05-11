@@ -3,3 +3,9 @@
     display: none;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .hide--mobile {
+    display: none;
+  }
+}

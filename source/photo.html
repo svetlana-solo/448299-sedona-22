@@ -13,7 +13,11 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="index.html">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -49,8 +53,14 @@
         <ul class="gallery__list">
           <li class="gallery__item">
             <a href="#">
-              <img class="gallery__img" src="/img/gallery/photo-1-mobile.jpg" width="280" height="280"
-                alt="Закат на въезде в город">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="/img/gallery/photo-1-mobile.jpg"
+                  srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Закат на въезде в город">
+              </picture>
             </a>
             <div class="gallery__wrapper">
               <p class="gallery__name">
@@ -68,8 +78,15 @@
           </li>
           <li class="gallery__item">
             <a href="#">
-              <img class="gallery__img" src="/img/gallery/photo-2-mobile.jpg" width="280" height="280"
-                alt="Цветущие кактусы на фоне гор">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="/img/gallery/photo-2-mobile.jpg"
+                  srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280"
+                  alt="Цветущие кактусы на фоне гор">
+              </picture>
             </a>
             <div class="gallery__wrapper">
               <p class="gallery__name">
@@ -87,8 +104,14 @@
           </li>
           <li class="gallery__item">
             <a href="#">
-              <img class="gallery__img" src="/img/gallery/photo-3-mobile.jpg" width="280" height="280"
-                alt="Горная тропа">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="/img/gallery/photo-3-mobile.jpg"
+                  srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горная тропа">
+              </picture>
             </a>
             <div class="gallery__wrapper">
               <p class="gallery__name">
@@ -106,8 +129,14 @@
           </li>
           <li class="gallery__item">
             <a href="#">
-              <img class="gallery__img" src="/img/gallery/photo-4-mobile.jpg" width="280" height="280"
-                alt="Каменный мост">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
+                <img class="gallery__img" src="/img/gallery/photo-4-mobile.jpg"
+                  srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Каменный мост">
+              </picture>
             </a>
             <div class="gallery__wrapper">
               <p class="gallery__name">
@@ -132,8 +161,14 @@
             очередной
             раз!</p>
         </div>
-        <img class="video-gallery__img" src="/img/gallery/video-mobile.jpg" width="320" height="200"
-          alt="Видео о Седоне">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet@2x.jpg 2x">
+          <img class="video-gallery__img" src="/img/gallery/video-mobile.jpg"
+            srcset="img/gallery/video-mobile@2x.jpg 2x" width="320" height="200" alt="Видео о Седоне">
+        </picture>
         <div class="video-gallery__panel panel">
           <div class="panel__bar">
             <div class="panel__handle" tabindex="0"></div>
@@ -193,7 +228,11 @@
       <div class="page-footer__item copyright">
         <p class="copyright__item">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="black" />
+          </svg>
         </a>
       </div>
     </footer>

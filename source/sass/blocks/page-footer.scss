@@ -1,11 +1,17 @@
 .page-footer {
   text-align: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 29px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -21,6 +27,24 @@
 
 @media (max-width: $mobile-width-only) {
   .page-footer__item:first-child {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__item:first-child {
+    margin-left: -28px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__item:last-child {
+    margin-right: -5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__item:last-child {
+    margin-right: -28px;
   }
 }
