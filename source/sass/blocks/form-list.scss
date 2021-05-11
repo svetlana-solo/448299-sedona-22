@@ -53,17 +53,6 @@
   text-transform: none;
 }
 
-.form-list__item {
-  position: relative;
-  margin-bottom: 9px;
-}
-
-@media (min-width: $tablet-width) {
-  .form-list__item {
-    margin-bottom: 18px;
-  }
-}
-
 .form-list--attractions {
   padding-bottom: 3px;
 }
@@ -75,29 +64,11 @@
   }
 }
 
-//@media (min-width: $desktop-width) {
-//  .form-list--attractions .form-list__list {
-//    column-gap: 74px;
-//  }
-//}
-
-
-.form-list--attractions .form-list__item {
-  margin-bottom: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .form-list--attractions .form-list__item {
-    margin-bottom: 27px;
+@media (min-width: $desktop-width) {
+  .form-list--attractions {
+    padding-bottom: 44px;
   }
 }
-
-@media (min-width: $tablet-width) {
-  .form-list--attractions .form-list__title {
-    margin-bottom: 41px;
-  }
-}
-
 
 @media (min-width: $tablet-width) {
   .form-list--attractions .form-list__list {
@@ -113,5 +84,39 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0;
+    column-gap: 50px;
+  }
+}
+
+.form-list__item {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__item {
+    margin-bottom: 18px;
+  }
+}
+
+.form-list--attractions .form-list__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--attractions .form-list__item {
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list--attractions .form-list__item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--attractions .form-list__title {
+    margin-bottom: 41px;
   }
 }

@@ -17,6 +17,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 33px;
+  }
+}
+
 .page-footer__item:first-child {
   font-weight: bold;
   font-size: 21px;
