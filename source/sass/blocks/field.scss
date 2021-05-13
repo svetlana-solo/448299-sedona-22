@@ -35,5 +35,24 @@
 }
 
 .field__label {
-  margin-right: 12px;
+  margin-right: 14px;
+}
+
+.field--contacts .field__label {
+  margin-left: 22px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .field--contacts .field__input {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field--contacts .field__label {
+    margin-left: 0;
+    margin-right: 18px;
+    margin-bottom: 0;
+  }
 }
