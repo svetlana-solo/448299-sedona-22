@@ -39,8 +39,8 @@
 .panel__handle::before {
   content: "";
   display: block;
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   background-color: $white;
   border-radius: 50%;
   position: absolute;
@@ -56,13 +56,17 @@
   }
 
   .panel__handle::before {
-    left: 28%;
+    left: 29%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .panel__handle {
     width: 540px;
+  }
+
+  .panel__handle::before {
+    left: 21%;
   }
 }
 
@@ -74,6 +78,8 @@
   background-color: $grey-200;
   position: relative;
   margin: 0 auto;
+  padding-left: 6px;
+  padding-right: 7px;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,6 +87,8 @@
     width: 648px;
     height: 93px;
     margin-top: -93px;
+    padding-left: 18px;
+    padding-right: 26px;
     background-color: rgba($black, 0.6);
   }
 }
