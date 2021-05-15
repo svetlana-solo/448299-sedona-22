@@ -118,50 +118,30 @@
   margin-right: auto;
 }
 
-//.panel__button--play {
-//  display: block;
-//  width: 16px;
-//  height: 20px;
-//  position: absolute;
-//  top: 22px;
-//  left: 25px;
-//}
+.panel__button svg {
+  color: $grey-600;
+}
 
-//@media (min-width: $tablet-width) {
-//  .panel__button--play {
-//    top: 35px;
-//    left: 35px;
-//  }
-//}
+.panel__button:hover svg,
+.panel__button:focus svg {
+  color: $grey-700;
+}
 
-//.panel__button--subtitles {
-//  display: block;
-//  width: 32px;
-//  height: 20px;
-//  position: absolute;
-//  top: 23px;
-//  right: 74px;
-//}
+.panel__button:active svg {
+  color: rgba($grey-700, 0.3);
+}
 
-//@media (min-width: $tablet-width) {
-//  .panel__button--subtitles {
-//    top: 36px;
-//    right: 92px;
-//  }
-//}
+@media (min-width: $tablet-width) {
+  .panel__button svg {
+    color: $white;
+  }
 
-//.panel__button--fullscreen {
-//  display: block;
-//  width: 20px;
-//  height: 20px;
-//  position: absolute;
-//  top: 23px;
-//  right: 23px;
-//}
+  .panel__button:hover svg,
+  .panel__button:focus svg {
+    color: rgba($white, 0.6);
+  }
 
-//@media (min-width: $tablet-width) {
-//  .panel__button--fullscreen {
-//    top: 36px;
-//    right: 37px;
-//  }
-//}
+  .panel__button:active svg {
+    color: rgba($white, 0.3);
+  }
+}
