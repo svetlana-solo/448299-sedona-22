@@ -73,18 +73,19 @@
 @media (min-width: $tablet-width) {
   .form-list--attractions .form-list__list {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, max-content);
     justify-content: center;
-    column-gap: 60px;
+    column-gap: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-list--attractions .form-list__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, max-content);
     margin: 0;
     column-gap: 50px;
+    justify-content: space-between;
   }
 }
 

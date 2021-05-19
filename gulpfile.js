@@ -44,6 +44,8 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
+exports.html = html;
+
 // Scripts
 
 const scripts = () => {
@@ -152,9 +154,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/*.js", gulp.series(scripts));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 // Build

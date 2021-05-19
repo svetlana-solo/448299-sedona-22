@@ -140,6 +140,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__description--bridge {
+    padding: 2px 90px 54px 90px;
+  }
+}
+
 .advantages__item {
   padding-top: 0;
   background-color: $grey;

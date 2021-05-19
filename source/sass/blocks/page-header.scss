@@ -6,6 +6,7 @@
 .page-header__main-image {
   position: relative;
   height: 158px;
+  background-color: $blue;
   background-image: url("../img/intro-triangle.svg"), url("../img/back/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position-x: 50%;

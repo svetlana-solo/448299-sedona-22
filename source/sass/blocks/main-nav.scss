@@ -175,7 +175,27 @@
     color: $black;
   }
 
+  .main-nav__item a:hover {
+    color: $blue-200;
+  }
+
+  .main-nav__item a:active {
+    color: rgba($black, 0.3);
+  }
+
   .main-nav__item:nth-child(4n-2) {
     margin-right: 20%;
+  }
+
+  .main-nav__item--current a {
+    color: $brown;
+  }
+
+  .main-nav__item--current a:hover {
+    color: $brown-200;
+  }
+
+  .main-nav__item--current a:active {
+    color: rgba($brown, 0.3);
   }
 }

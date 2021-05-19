@@ -13,7 +13,6 @@
     width: 440px;
     height: 93px;
     background-color: transparent;
-    //background-color: rgba(yellow, 0.3);
     margin-top: -93px;
     margin-left: 71px;
     z-index: 1;
@@ -87,7 +86,7 @@
     width: 648px;
     height: 93px;
     margin-top: -93px;
-    padding-left: 18px;
+    padding-left: 15px;
     padding-right: 26px;
     background-color: rgba($black, 0.6);
   }
@@ -102,8 +101,8 @@
 .panel__button {
   border: none;
   padding: 0;
-  width: 52px;
-  height: 52px;
+  width: 55px;
+  height: 55px;
   background-color: transparent;
   cursor: pointer;
 }
