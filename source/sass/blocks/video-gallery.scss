@@ -43,8 +43,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .video-gallery__description .description__title,
-  .video-gallery__description .description__text {
+  .video-gallery__title,
+  .video-gallery__text {
     width: 445px;
   }
 }
