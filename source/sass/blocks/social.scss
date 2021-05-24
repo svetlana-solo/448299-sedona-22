@@ -27,11 +27,14 @@
   background-color: $blue-200;
 }
 
-.social__link:active {
+.social__link:active,
+.social__link:focus {
   background-color: $blue-300;
+  outline: none;
 }
 
-.social__link:active::before {
+.social__link:active::before,
+.social__link:focus::before {
   opacity: 0.3;
 }
 

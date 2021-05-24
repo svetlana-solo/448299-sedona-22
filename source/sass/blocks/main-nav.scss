@@ -179,8 +179,10 @@
     color: $blue-200;
   }
 
-  .main-nav__item a:active {
+  .main-nav__item a:active,
+  .main-nav__item a:focus {
     color: rgba($black, 0.3);
+    outline: none;
   }
 
   .main-nav__item:nth-child(4n-2) {
@@ -195,7 +197,9 @@
     color: $brown-200;
   }
 
-  .main-nav__item--current a:active {
+  .main-nav__item--current a:active,
+  .main-nav__item--current a:focus {
     color: rgba($brown, 0.3);
+    outline: none;
   }
 }

@@ -46,7 +46,7 @@
 }
 
 .radio__input:focus + label::before {
-  background-color: $grey-300;
+  background-color: $grey-400;
 }
 
 .radio__input:active + label::before {

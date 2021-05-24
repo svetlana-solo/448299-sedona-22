@@ -37,7 +37,7 @@
 }
 
 .checkbox__input:focus + label::before {
-  background-color: $grey-300;
+  background-color: $grey-400;
 }
 
 .checkbox__input:active + label::before {

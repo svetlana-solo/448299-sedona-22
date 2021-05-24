@@ -121,12 +121,17 @@
   color: $grey-600;
 }
 
-.panel__button:hover svg,
-.panel__button:focus svg {
+.panel__button:hover svg {
   color: $grey-700;
 }
 
-.panel__button:active svg {
+.panel__button:active,
+.panel__button:focus {
+  outline: none;
+}
+
+.panel__button:active svg,
+.panel__button:focus svg {
   color: rgba($grey-700, 0.3);
 }
 
@@ -140,7 +145,8 @@
     color: rgba($white, 0.6);
   }
 
-  .panel__button:active svg {
+  .panel__button:active svg,
+  .panel__button:focus svg {
     color: rgba($white, 0.3);
   }
 }
